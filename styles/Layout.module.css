@@ -4,6 +4,7 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  background-color: var(--background-gray);
 }
 
 .Layoutleft{
@@ -11,4 +12,26 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 4rem;
+}
+
+.Layoutright{
+  background-image: url('../public/assets/signinIMG.png');
+  height: 100%;
+  background-position: left;
+  background-size: cover;
+}
+
+.headerBrand{
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  font-size: 1.4rem;
+}
+
+.headerBrand > h2{
+  font-weight: 800;
+}
+
+.colorBrand{
+  color: var(--standard-yellow);
 }

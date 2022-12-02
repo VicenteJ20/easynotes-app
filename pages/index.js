@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import style from '../styles/Home.module.css'
 import Link from 'next/link'
 import { useSession, getSession, signOut } from 'next-auth/react'
 
@@ -29,21 +28,6 @@ function NotLogged(){
   )
 }
 
-function Logged({session, handleSignOut}){
-  return (
-    <main>
-      <h2>Usuario Autorizado</h2>
-      <div>
-        <h3>Username: {session.user.name}</h3>
-        <h3>Email: {session.user.email}</h3>
-      </div>
-      <div className={style.SignOutDiv}>
-        <button onClick={handleSignOut}>Cerrar sesión</button>
-      </div>
-    </main>
-  )
-}
-
 export async function getServerSideProps({req}){
   const session = await getSession({req})
 
@@ -51,6 +35,15 @@ export async function getServerSideProps({req}){
     return {
       redirect: {
         destination: '/login',
+        permanent: false
+      }
+    }
+  }
+
+  if (session){
+    return {
+      redirect: {
+        destination: '/dashboard',
         permanent: false
       }
     }

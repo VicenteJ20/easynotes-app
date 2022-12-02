@@ -1,0 +1,81 @@
+.Dashboard{
+  background-color: var(--background-gray);
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+
+.DashboardNav{
+  background-color: var(--dark-grey);
+  color: var(--full-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 2rem 0 2rem;
+  width: 24rem;
+  gap: 3rem;
+}
+
+.headerBrand{
+  position: absolute;
+  top: 2rem;
+  font-size: 1.4rem;
+}
+
+.colorBrand{
+  color: var(--standard-yellow);
+}
+
+.Navigation > ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Navigation > ul > li > a{
+  color: var(--full-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+  gap: 1rem;
+  transition: 0.5s all;
+  font-weight: 600;
+}
+
+.Navigation > ul > li > a:hover {
+  color: var(--standard-yellow)
+}
+
+.DashboardChildren{
+  padding: 2.5rem 2rem;
+}
+
+.ProfileDashboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.userImage{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+
+.logout{
+  border: 1px solid var(--danger-red);
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: var(--full-white);
+  background-color: var(--danger-red);
+  transition: 0.5s all;
+}
+
+.logout:hover{
+  background-color: var(--standard-yellow);
+}

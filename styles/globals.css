@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --full-black: #050505;
+  --full-white: #FFF;
+  --background-gray: #FAFAFA;
+  --gray-text: #575757;
+  --dark-grey: #252525;
+  --standard-yellow: #D89900;
+  --danger-red: rgb(180, 1, 1);
+}
+
 @media (prefers-color-scheme: white) {
   html {
     color-scheme: dark;

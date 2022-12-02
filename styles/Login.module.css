@@ -1,7 +1,11 @@
+.title{
+  font-size: 2.5rem;
+}
+
 .Form{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .FormDiv{
@@ -14,10 +18,11 @@
 .FormDiv > label{
   font-weight: 500;
   font-size: 1.2rem;
+  color: var(--gray-text);
 }
 
 .FormDiv > input {
-  border: 1px solid #010101;
+  border: 2px solid var(--standard-yellow);
   padding: 0.4rem 1rem;
   border-radius: 0.3rem;
   font-size: 1rem;
@@ -35,4 +40,87 @@
 
 .showIcon:hover{
   color: #525252;
+}
+
+.FormDivSubmit{
+  padding-top: 1rem;
+}
+
+.submitBtn{
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  color: var(--full-white);
+  border: 1px solid var(--full-black);
+  background-color: var(--full-black);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.6s all;
+}
+
+.submitBtn:hover{
+  background-color: var(--standard-yellow);
+}
+
+.FormDivProviders{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.providerBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--full-black);
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.6s all;
+  width: 100%;
+  font-weight: 600;
+}
+
+.googleBtn{
+  background-color: var(--full-white);
+}
+
+.googleBtn:hover{
+  background-color: var(--standard-yellow);
+  color: var(--full-white);
+}
+
+.githubBtn{
+  background-color: var(--gray-text);
+  color: var(--full-white);
+}
+
+.githubBtn:hover{
+  background-color: var(--standard-yellow);
+}
+
+.errorSpan{
+  color: var(--danger-red);
+}
+
+.redirectDiv{
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.redirectDiv > p > a{
+  color: var(--standard-yellow);
+  text-decoration: none;
+  transition: 0.5s all;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.redirectDiv > p > a:hover{
+  color: var(--gray-text);
 }

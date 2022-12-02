@@ -1,0 +1,23 @@
+.NotesContainer{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+.NotesDashboard{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.CreateNoteForm{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.FormDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
